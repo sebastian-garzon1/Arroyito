@@ -1,0 +1,38 @@
+#card {
+    background-color: orange;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+}
+
+h2 {
+    color: white;
+    font-size: 36px;
+    margin: 0;
+    padding-top: 20px;
+}
+
+#mensaje{
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    padding-top: 20px;
+}
+
+#changeBtn{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: orange;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+#signature{
+    color: white;
+    font-size: 16px;
+    padding-top: 20px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arroyito 🤍</title>
+    <link rel="shortcut icon" href="cocoro.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="card">
+        <h1>ARROYITO 🤍</h1>
+        <img src="vida.jpg" width="20%">
+        <p id="mensaje">TE AMO</p>
+        <button id="changeBtn">Otra razon por la que ¡Te amo!</button>
+        <br><br><br>
+        <span id="signature">Eres la mejor, podemos superar lo que sea siendo el apoyo el uno 
+            del otro.<br>Siempre estare para ti 🤍 En las malas y las buenas, 
+            el amor se demuestra en cualquier situación</span>
+        <br><br>
+        <audio controls>
+            <source src="arroyito.mp3" type="audio/mp3">
+                Tu navegador no soporta audio HTML5.
+        </audio>
+    </div>
+    <script>
+        const mensaje = document.querySelector('#mensaje');
+        const changeBtn = document.querySelector("#changeBtn");
+
+        const mensajes = ['Eres la persona mas increible del mundo',
+        'La mas tierna',
+        'La mas cariñosa',
+        'Esos ojitos son mi mundo',
+        'Las cosas en el momento no son color de rosa pero estare junto a ti siempre', 
+        'Siempre tratas de mostrar una sonrisa al mundo',
+        'Y es la sonrisa mas inspiradora que hay', 
+        'Eres la persona que me genera tantas ganas de demostrar amor',
+        'Siempre quiero cantarte', 'Tratando de hacerte feliz','vamos a sanar',
+        'te quiero ver feliz', 'mi intencion es estar toda la vida para ti',
+        'mi panameña hermosa', 'TE AMO, TE AMO Y TE AMARE SIEMPRE',
+        'Siempre que estes mal mira esto o llamame al 3228623317',
+        'o bien sea estare ahi molestando preguntando que tienes',
+        'Sigue siendo la mejor, sin preocupaciones',
+        'Lo siento por todas las molestias que te cause', 'y en caso de que ya no sientas amor lo entenderé',
+        'sin embargo aqui estaré'];
+
+        let currentMensaje = 0;
+
+        changeBtn.addEventListener("click", changeMensaje);
+
+        function changeMensaje(){
+            mensaje.textContent = mensajes[currentMensaje];
+            currentMensaje = (currentMensaje + 1)% mensajes.length;
+        }
+    </script>
+    
+    
+</body>
+</html>

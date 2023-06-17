@@ -7,6 +7,17 @@
     width: 50%;
 }
 
+
+#card2 {
+    background-color: rgb(21, 0, 255);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+
 h2 {
     color: white;
     font-size: 36px;
